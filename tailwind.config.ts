@@ -9,7 +9,21 @@ const config: Config = withMT({
     "./node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        //  bg-brand-white, text-brand-green, etc.
+        'brand-white': "#DDDDDD",   
+        'brand-grey': "#C1BDBD",    
+        'brand-green': "#496B60",   
+        'brand-dark': "#333533",    
+        'brand-black': "#202020",   
+        brand: "#496B60", 
+      },
+      fontFamily: {
+        museo: ["Museo", "sans-serif"],
+        museosans: ["Museo Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 });

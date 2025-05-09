@@ -9,9 +9,9 @@ function Hero() {
       <Image
         width={1200}
         height={1200}
-        src="/image/image8.svg"
+        src="/image/patron_verde.png"
         alt="bg-img"
-        className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center"
+        className="absolute inset-0 ml-auto w-[920px] h-[780px] rounded-bl-[100px] object-cover object-center opacity-[0.60]"
       />
       <div className="container mx-auto mt-28">
         <div className="grid grid-cols-12 text-center lg:text-left">
@@ -21,7 +21,7 @@ function Hero() {
               color="blue-gray"
               className="lg:text-5xl !leading-snug text-3xl lg:max-w-3xl"
             >
-              Unlock the Power of the Web with Our Expert Courses
+              Farmacia de turno <br/>en Las Flores
             </Typography>
             <Typography variant="lead" className="mb-10 mt-6 !text-gray-900">
               Are you ready to embark on an exciting journey into the world of
