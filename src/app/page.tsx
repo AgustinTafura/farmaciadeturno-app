@@ -68,7 +68,7 @@ export default function Home() {
       <Events />
       <StudentsFeedback />
       <TrustedCompany />
-      <EventCard label="Ayer" event={previous} />
+        <EventCard label="Ayer" event={previous} />
         <EventCard label="Hoy" event={current} />
         <EventCard label="Mañana" event={next} />
         <div>
