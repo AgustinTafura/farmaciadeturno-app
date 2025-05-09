@@ -1,103 +1,91 @@
-import Image from "next/image";
+'use client';
+// components
+import { Navbar, Footer } from "@/components";
+
+// sections
+import Hero from "./hero";
+import OutImpressiveStats from "./out-impressive-stats";
+import CoursesCategories from "./courses-categories";
+import ExploreCourses from "./explore-courses";
+import Testimonial from "./testimonial";
+import Events from "./events";
+import StudentsFeedback from "./students-feedback";
+import TrustedCompany from "./trusted-companies";
+
+import { useEffect, useState } from 'react';
+
+type Event = {
+  id: string;
+  summary: string;
+  start: { date?: string };
+  end: { date?: string };
+};
+
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  const [events, setEvents] = useState<Event[]>([]);
+
+  useEffect(() => {
+    fetch('/api/events')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.items) setEvents(data.items);
+      });
+  }, []);
+
+
+  const getDate = (offset: number) => {
+    const d = new Date();
+    d.setDate(d.getDate() + offset);
+    return d.toISOString().split('T')[0];
+  };
+
+  const findEventByDate = (date: string) =>
+    events.find((e) => e.start.date === date);
+
+  const previous = findEventByDate(getDate(-1));
+  const current = findEventByDate(getDate(0));
+  const next = findEventByDate(getDate(1));
+
+  const EventCard = ({ label, event }: { label: string; event?: Event }) => (
+    <div className="border rounded-xl p-4 shadow w-full max-w-md bg-white dark:bg-neutral-900">
+      <h2 className="text-sm text-gray-500 dark:text-gray-400">{label}</h2>
+      <p className="text-lg font-medium mt-1 text-gray-800 dark:text-white">
+        {event?.summary || 'Sin evento'}
+      </p>
     </div>
+  );
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <OutImpressiveStats />
+      <CoursesCategories />
+      <ExploreCourses />
+      <Testimonial />
+      <Events />
+      <StudentsFeedback />
+      <TrustedCompany />
+      <EventCard label="Ayer" event={previous} />
+        <EventCard label="Hoy" event={current} />
+        <EventCard label="Mañana" event={next} />
+        <div>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-8 text-center text-gray-900 dark:text-white">
+            Calendario de Farmacias de Turno
+          </h1>
+          <div className="w-full max-w-4xl aspect-[4/3] sm:aspect-[16/9]">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires"
+                style={{ border: 0 }}
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                scrolling="no" />
+            </div>
+          </div>
+          <Footer />
+    </>
   );
 }
