@@ -63,26 +63,26 @@ export function Navbar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
+      () => window.innerWidth >= 960 && setOpen(false),
     );
   }, []);
 
   return (
-    <div className="px-10 sticky top-4 z-50">
-      <div className="mx-auto container">
+    <div className="sticky top-4 z-50 px-10">
+      <div className="container mx-auto">
         <MTNavbar
           blurred
           color="white"
-          className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
+          className="relative z-50 mt-6 border-0 py-3 pl-6 pr-3"
         >
           <div className="flex items-center justify-between">
             <Typography color="blue-gray" className="text-lg font-bold">
-              Material Tailwind
+              Farmacia de Turno en Las Flores
             </Typography>
-            <ul className="ml-10 hidden items-center gap-8 lg:flex">
+            {/* <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
                 <NavItem key={name} href={href}>
-                  <Icon className="h-5 w-5" />
+                 <Icon  className="h-5 w-5" />
                   {name}
                 </NavItem>
               ))}
@@ -107,7 +107,7 @@ export function Navbar() {
               ) : (
                 <Bars3Icon strokeWidth={2} className="h-6 w-6" />
               )}
-            </IconButton>
+            </IconButton> */}
           </div>
           <Collapse open={open}>
             <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
@@ -119,7 +119,7 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              <div className="mt-6 mb-4 flex items-center gap-4">
+              <div className="mb-4 mt-6 flex items-center gap-4">
                 <Button variant="text">Log in</Button>
                 <a
                   href="https://www.material-tailwind.com/blocks"
