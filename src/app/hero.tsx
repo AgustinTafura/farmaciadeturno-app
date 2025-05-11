@@ -19,13 +19,16 @@ function Hero({ event }: HeroProps) {
 
   return (
     <div className="!flex h-[55vh] w-full items-center justify-between px-10">
-      <Image
-        width={1200}
-        height={1200}
-        src="/image/patron_verde.png"
-        alt="bg-img"
-        className="absolute inset-0 ml-auto h-[780px] w-[920px] rounded-bl-[100px] object-cover object-center opacity-[0.60]"
-      />
+      <picture>
+        <source media="(min-width: 1024px)" srcSet="/image/patron_verde.png" />
+
+        <img
+          src="/image/patron_baja_opacidad.png"
+          alt="bg-img"
+          className="absolute inset-0 ml-auto h-[780px] w-[920px] rounded-bl-[100px] object-cover object-center opacity-[0.60]"
+          loading="lazy"
+        />
+      </picture>
       <div className="container mx-auto mt-[22rem] lg:mt-[16rem]">
         <div className="grid grid-cols-12 text-center lg:text-left">
           <Card className="col-span-full rounded-xl border border-white bg-white/90 p-8 py-10 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
@@ -56,17 +59,33 @@ function Hero({ event }: HeroProps) {
               <DefaultSkeleton className="mb-10" />
             )}
 
-            <div className="mb-8 flex justify-center gap-4 lg:justify-start">
-              <a href={mapsLink} target="_blank" rel="noopener noreferrer">
-                <Button color="gray">Como llegar</Button>
+            <div className="mb-8 flex flex-col justify-center gap-4 sm:flex-col md:flex-row lg:justify-start">
+              <a
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full md:w-auto"
+              >
+                <Button color="gray" className="w-full md:w-auto">
+                  Como llegar
+                </Button>
               </a>
-              <Button color="gray" variant="outlined">
-                <i className="fa-brands fa-whatsapp fa-1x" /> whatsapp
+              <Button
+                color="gray"
+                variant="outlined"
+                className="w-full md:w-auto"
+              >
+                <i className="fa-brands fa-whatsapp fa-1x mr-2" /> whatsapp
               </Button>
-              <Button color="gray" variant="outlined">
-                <i className="fa-solid fa-phone fa-1x"></i> llamar
+              <Button
+                color="gray"
+                variant="outlined"
+                className="w-full md:w-auto"
+              >
+                <i className="fa-solid fa-phone fa-1x mr-2"></i> llamar
               </Button>
             </div>
+
             <div className="grid grid-cols-2 items-center justify-between gap-4 lg:grid-cols-4 lg:justify-start">
               <Image
                 width={144}
