@@ -58,8 +58,8 @@ export default function Home() {
   const findEventByDate = (date: string): Event | undefined => {
     const event = events.find((e) => e.start.date === date);
     if (!event) return undefined;
-    console.log(event);
     const pharmacy = pharmaciesByName[event.summary.toLowerCase()];
+
     return {
       ...event,
       pharmacy,

@@ -9,7 +9,7 @@ function LocationMap({ address }: LocationMapProps) {
   const mapSrc = `https://www.google.com/maps?q=${encodedAddress}&output=embed`;
 
   return (
-    <div className="mb-10 overflow-hidden rounded-xl shadow-lg">
+    <div className="w-full md:w-1/2 xl:w-[60%] mx-auto lg:mx-0 mb-10 overflow-hidden rounded-xl shadow-lg">
       <iframe
         src={mapSrc}
         width="100%"

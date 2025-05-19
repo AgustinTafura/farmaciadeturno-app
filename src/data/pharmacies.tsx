@@ -3,7 +3,7 @@ import { Pharmacy } from "@/types/pharmacy";
 export const pharmaciesByName: Record<string, Pharmacy> = {
   argentina: {
     name: "Argentina",
-    address: "Hipólito Yrigoyen 444, Las Flores (cp 7200).",
+    address: "Hipólito Yrigoyen 444",
     instagram: "fargentina.lf",
     tel: "2244-442246",
     whatsapp: "2244-420222",
@@ -12,7 +12,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   "san martin": {
     name: "San Martin",
-    address: "Av San Martin 567, Las Flores (cp 7200).",
+    address: "Av San Martin 567",
     instagram: "farmacia_sanmartin",
     tel: "2244-452223",
     whatsapp: "",
@@ -21,7 +21,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   nieto: {
     name: "Nieto",
-    address: "Av. Pte. Perón 697 esq. Pueyrredón, Las Flores (cp 7200).",
+    address: "Av. Pte. Perón 697 esq. Pueyrredón",
     instagram: "farmacia.nieto.lf",
     tel: "2244-440994",
     whatsapp: "",
@@ -30,7 +30,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   mafren: {
     name: "Mafren",
-    address: "Av. San Martin 289, Las Flores (cp 7200).",
+    address: "Av. San Martin 289",
     instagram: "farmacia.mafren",
     tel: "2244-450783",
     whatsapp: "",
@@ -39,7 +39,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   giraldi: {
     name: "Giraldi",
-    address: "Bernardo Irigoyen 203, Las Flores (cp 7200).",
+    address: "Bernardo Irigoyen 203",
     instagram: "farmacia.giraldi",
     tel: "2244-440878",
     whatsapp: "",
@@ -48,7 +48,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   "di bernardi": {
     name: "Di Bernardi",
-    address: "Avellaneda y Rivadavia, Las Flores (cp 7200).",
+    address: "Avellaneda y Rivadavia",
     instagram: "farmaciadibernardi",
     tel: "2244-442848",
     whatsapp: "2244428894",
@@ -57,7 +57,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   manzotti: {
     name: "Manzotti",
-    address: "Harosteguy 315, Las Flores (cp 7200).",
+    address: "Harosteguy 315",
     instagram: "farmamanzotti",
     tel: "2244-453944",
     whatsapp: "",
@@ -66,7 +66,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   soraluce: {
     name: "Soraluce",
-    address: "Av. Avellaneda 777, Las Flores (cp 7200).",
+    address: "Av. Avellaneda 777",
     instagram: "farmamanzotti",
     tel: "2244-450085",
     whatsapp: "",
@@ -75,7 +75,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   paculnis: {
     name: "Paculnis",
-    address: "Av. San Martin 911, Las Flores (cp 7200).",
+    address: "Av. San Martin 911",
     instagram: "farmacia_paculnis",
     tel: "2244-450688",
     whatsapp: "2244401758",
@@ -84,7 +84,7 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   },
   pasteur: {
     name: "Pasteur",
-    address: "Pueyrredón 515, Las Flores (cp 7200).",
+    address: "Pueyrredón 515",
     instagram: "",
     tel: "2244-452250",
     whatsapp: "",
