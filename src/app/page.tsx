@@ -19,6 +19,7 @@ import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 
 import { useEffect, useState } from "react";
+import CarouselCards from "@/components/carouselCards";
 
 export default function Home() {
   const [events, setEvents] = useState<Event[]>([]);
@@ -82,7 +83,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero event={current} />
-      <OutImpressiveStats />
+      {/* <OutImpressiveStats />
       <CoursesCategories />
       <ExploreCourses />
       <Testimonial />
@@ -91,8 +92,8 @@ export default function Home() {
       <TrustedCompany />
       <EventCard label="Ayer" event={previous} />
       <EventCard label="Hoy" event={current} />
-      <EventCard label="Mañana" event={next} />
-      <div>
+      <EventCard label="Mañana" event={next} /> */}
+      {/* <div>
         <h1 className="mb-8 text-center text-2xl font-bold text-gray-900 dark:text-white sm:text-4xl">
           Calendario de Farmacias de Turno
         </h1>
@@ -106,7 +107,8 @@ export default function Home() {
             scrolling="no"
           />
         </div>
-      </div>
+      </div> */}
+      <CarouselCards />
       <Footer />
     </>
   );
