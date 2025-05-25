@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import { FixedPlugin, Layout } from "@/components";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

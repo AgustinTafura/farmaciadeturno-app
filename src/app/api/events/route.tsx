@@ -9,7 +9,7 @@ export async function GET() {
   const start = new Date(today);
   start.setDate(today.getDate() - 1);
   const end = new Date(today);
-  end.setDate(today.getDate() + 1);
+  end.setDate(today.getDate() + 5);
 
   const timeMin = start.toISOString();
   const timeMax = new Date(end.getTime() + 86400000).toISOString();

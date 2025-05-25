@@ -19,7 +19,7 @@ import StudentsFeedback from "./students-feedback";
 import TrustedCompany from "./trusted-companies";
 
 import { useEffect, useState } from "react";
-import CarouselCards from "@/components/carouselCards";
+import DateCarousel from "@/components/date-carousel";
 
 export default function Home() {
   const [events, setEvents] = useState<Event[]>([]);
@@ -60,16 +60,24 @@ export default function Home() {
     const event = events.find((e) => e.start.date === date);
     if (!event) return undefined;
     const pharmacy = pharmaciesByName[event.summary.toLowerCase()];
-
+    console.log(date)
     return {
       ...event,
       pharmacy,
     };
   };
 
-  const previous = findEventByDate(getDate(-1));
+  // const previous = findEventByDate(getDate(-1));
   const current = findEventByDate(getDate(0));
-  const next = findEventByDate(getDate(1));
+  // const next = findEventByDate(getDate(1));
+  const eventsSinceYesterday = [findEventByDate(getDate(-1)), // previous
+  findEventByDate(getDate(0)),  // current
+  findEventByDate(getDate(1)),  // next
+  findEventByDate(getDate(2)),
+  findEventByDate(getDate(3)),
+  findEventByDate(getDate(4)),
+  findEventByDate(getDate(5)),]
+  console.log(eventsSinceYesterday)
 
   const EventCard = ({ label, event }: { label: string; event?: Event }) => (
     <div className="dark:bg-neutral-900 w-full max-w-md rounded-xl border bg-white p-4 shadow">
@@ -108,7 +116,7 @@ export default function Home() {
           />
         </div>
       </div> */}
-      <CarouselCards />
+      <DateCarousel cardsData={eventsSinceYesterday} />
       <Footer />
     </>
   );
