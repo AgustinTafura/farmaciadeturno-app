@@ -1,16 +1,15 @@
-'use client';
+"use client";
 
-import Slider from 'react-slick';
-import { Typography } from '@material-tailwind/react';
-import { useMemo } from 'react';
+import Slider from "react-slick";
+import { Typography } from "@material-tailwind/react";
+import { useMemo } from "react";
 import { Event } from "@/types/event";
-import { CalendarCard } from './calendar-card';
+import { CalendarCard } from "./calendar-card";
 
 type DateCarouselProps = {
   cardsData: Event[];
 };
-export default function DateCarousel({cardsData}: DateCarouselProps) {
-
+export default function DateCarousel({ cardsData }: DateCarouselProps) {
   const settings = {
     className: "center",
     centerMode: true,
@@ -19,21 +18,26 @@ export default function DateCarousel({cardsData}: DateCarouselProps) {
     slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500,
-    initialSlide: 1
+    initialSlide: 1,
   };
 
   return (
-    <div className="slider-container px-4 py-8">
-      <Typography variant="h5" className="mb-4 text-center font-bold text-gray-800">
-        Carrusel de Fechas
-      </Typography>
-      <Slider {...settings}>
-        {cardsData.map((cardData, index) => (
-          <div key={index} className="px-2">
-            <CalendarCard cardData={cardData}/>
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <>
+      <div className="slider-container px-8 py-8">
+        <Typography
+          variant="h5"
+          className="mb-4 text-center font-bold text-gray-800"
+        >
+          Carrusel de Fechas
+        </Typography>
+        <Slider {...settings}>
+          {cardsData.map((cardData, index) => (
+            <div key={index} className="px-2">
+              <CalendarCard cardData={cardData} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
 }

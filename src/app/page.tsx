@@ -60,7 +60,6 @@ export default function Home() {
     const event = events.find((e) => e.start.date === date);
     if (!event) return undefined;
     const pharmacy = pharmaciesByName[event.summary.toLowerCase()];
-    console.log(date)
     return {
       ...event,
       pharmacy,
@@ -70,15 +69,9 @@ export default function Home() {
   // const previous = findEventByDate(getDate(-1));
   const current = findEventByDate(getDate(0));
   // const next = findEventByDate(getDate(1));
-  const eventsSinceYesterday = [findEventByDate(getDate(-1)), // previous
-  findEventByDate(getDate(0)),  // current
-  findEventByDate(getDate(1)),  // next
-  findEventByDate(getDate(2)),
-  findEventByDate(getDate(3)),
-  findEventByDate(getDate(4)),
-  findEventByDate(getDate(5)),]
-  console.log(eventsSinceYesterday)
-
+  const eventsSinceYesterday = Array.from({ length: 7 }, (_, i) =>
+    findEventByDate(getDate(i - 1)),
+  );
   const EventCard = ({ label, event }: { label: string; event?: Event }) => (
     <div className="dark:bg-neutral-900 w-full max-w-md rounded-xl border bg-white p-4 shadow">
       <h2 className="text-sm text-gray-500 dark:text-gray-400">{label}</h2>
