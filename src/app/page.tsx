@@ -109,7 +109,7 @@ export default function Home() {
           />
         </div>
       </div> */}
-      <DateCarousel cardsData={eventsSinceYesterday} />
+      {/* <DateCarousel cardsData={eventsSinceYesterday} /> */}
       <Footer />
     </>
   );
