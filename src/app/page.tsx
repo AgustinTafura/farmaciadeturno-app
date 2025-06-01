@@ -2,7 +2,6 @@
 
 //data
 import { pharmaciesByName } from "@/data/pharmacies";
-import { Pharmacy } from "@/types/pharmacy";
 import { Event } from "@/types/event";
 
 // components
@@ -10,16 +9,8 @@ import { Navbar, Footer } from "@/components";
 
 // sections
 import Hero from "./hero";
-import OutImpressiveStats from "./out-impressive-stats";
-import CoursesCategories from "./courses-categories";
-import ExploreCourses from "./explore-courses";
-import Testimonial from "./testimonial";
-import Events from "./events";
-import StudentsFeedback from "./students-feedback";
-import TrustedCompany from "./trusted-companies";
 
 import { useEffect, useState } from "react";
-import DateCarousel from "@/components/date-carousel";
 
 export default function Home() {
   const [events, setEvents] = useState<Event[]>([]);
@@ -69,17 +60,17 @@ export default function Home() {
   // const previous = findEventByDate(getDate(-1));
   const current = findEventByDate(getDate(0));
   // const next = findEventByDate(getDate(1));
-  const eventsSinceYesterday = Array.from({ length: 7 }, (_, i) =>
-    findEventByDate(getDate(i - 1)),
-  );
-  const EventCard = ({ label, event }: { label: string; event?: Event }) => (
-    <div className="dark:bg-neutral-900 w-full max-w-md rounded-xl border bg-white p-4 shadow">
-      <h2 className="text-sm text-gray-500 dark:text-gray-400">{label}</h2>
-      <p className="mt-1 text-lg font-medium text-gray-800 dark:text-white">
-        {event?.summary || "Sin evento"}
-      </p>
-    </div>
-  );
+  // const eventsSinceYesterday = Array.from({ length: 7 }, (_, i) =>
+  //   findEventByDate(getDate(i - 1)),
+  // );
+  // const EventCard = ({ label, event }: { label: string; event?: Event }) => (
+  //   <div className="dark:bg-neutral-900 w-full max-w-md rounded-xl border bg-white p-4 shadow">
+  //     <h2 className="text-sm text-gray-500 dark:text-gray-400">{label}</h2>
+  //     <p className="mt-1 text-lg font-medium text-gray-800 dark:text-white">
+  //       {event?.summary || "Sin evento"}
+  //     </p>
+  //   </div>
+  // );
   return (
     <>
       <Navbar />

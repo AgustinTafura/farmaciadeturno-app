@@ -3,16 +3,12 @@ import {
   Navbar as MTNavbar,
   Collapse,
   Button,
-  IconButton,
   Typography,
 } from "@material-tailwind/react";
 import {
   RectangleStackIcon,
   UserCircleIcon,
   CommandLineIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-  Bars3Icon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
@@ -56,9 +52,9 @@ function NavItem({ children, href }: NavItemProps) {
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
-  function handleOpen() {
-    setOpen((cur) => !cur);
-  }
+  // function handleOpen() {
+  //   setOpen((cur) => !cur);
+  // }
 
   React.useEffect(() => {
     window.addEventListener(

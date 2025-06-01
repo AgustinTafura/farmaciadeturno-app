@@ -1,19 +1,19 @@
-import { Typography, Button, Input } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
-const LINKS = [
-  {
-    title: "Company",
-    items: ["About Us", "Careers", "Premium Tools", "Blog"],
-  },
-  {
-    title: "Pages",
-    items: ["Login", "Register", "Add List", "Contact"],
-  },
-  {
-    title: "Legal",
-    items: ["Terms", "Privacy", "Team", "About Us"],
-  },
-];
+// const LINKS = [
+//   {
+//     title: "Company",
+//     items: ["About Us", "Careers", "Premium Tools", "Blog"],
+//   },
+//   {
+//     title: "Pages",
+//     items: ["Login", "Register", "Add List", "Contact"],
+//   },
+//   {
+//     title: "Legal",
+//     items: ["Terms", "Privacy", "Team", "About Us"],
+//   },
+// ];
 
 const CURRENT_YEAR = new Date().getFullYear();
 

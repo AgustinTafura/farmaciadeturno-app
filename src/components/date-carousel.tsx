@@ -2,7 +2,6 @@
 
 import Slider from "react-slick";
 import { Typography } from "@material-tailwind/react";
-import { useMemo } from "react";
 import { Event } from "@/types/event";
 import { CalendarCard } from "./calendar-card";
 
