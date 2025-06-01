@@ -11,8 +11,8 @@ type HeroProps = {
 };
 
 const pharmacyImgLists = [
-  ["lidherma", "konjac", "maybelline", "acf"],
-  ["argentina", "giraldi", "dibernardi", "manzotti"],
+  ["lidherma", "konjac", "maybelline"],
+  ["argentina", "giraldi", "dibernardi"],
 ];
 
 function Hero({ event }: HeroProps) {
@@ -36,9 +36,9 @@ function Hero({ event }: HeroProps) {
           loading="lazy"
         />
       </picture>
-      <div className="container mx-auto mt-[600px] md:mt-[21rem]">
+      <div className="container mx-auto mt-[600px] md:mt-[17rem]">
         <div className="grid grid-cols-12 text-center lg:text-left">
-          <Card className="col-span-full rounded-xl border border-white bg-white/90 p-8 py-10 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-7">
+          <Card className="col-span-full rounded-xl border border-white bg-white/90 p-8 py-10 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-6">
             {address && address.trim() !== "" ? (
               <>
                 <Typography
@@ -49,10 +49,7 @@ function Hero({ event }: HeroProps) {
                   Farmacia{" "}
                   <span className="whitespace-nowrap uppercase">{title}</span>
                 </Typography>
-                <Typography
-                  variant="lead"
-                  className="mb-10 mt-6 !text-gray-900"
-                >
+                <Typography variant="lead" className="mb-1 mt-6 !text-gray-900">
                   <i className="fa fa-map-marker pr-2" aria-hidden="true" />
                   {`${address.split(",")[0]}, `}
                   <br className="block sm:hidden" />
@@ -107,7 +104,7 @@ function Hero({ event }: HeroProps) {
                   </a>
                 </div>
 
-                <div className="grid grid-cols-2 items-center justify-items-center gap-4 lg:grid-cols-4 lg:justify-start">
+                <div className="grid grid-cols-2 items-center justify-items-center gap-4 lg:grid-cols-3 lg:justify-start">
                   {pharmacyImgLists[pharmacyList].map((element, index) => (
                     <Image
                       key={index}
