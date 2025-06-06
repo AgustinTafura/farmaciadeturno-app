@@ -35,7 +35,7 @@ export function Events() {
   return (
     <section className="px-8 py-20">
       <div className="container mx-auto mb-20 text-center">
-        {/* // @ts-ignore */}
+        @ts-expect-error
         <Typography
           variant="h2"
           color="blue-gray"
