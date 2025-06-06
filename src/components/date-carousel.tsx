@@ -26,11 +26,6 @@ export default function DateCarousel({ cardsData }: DateCarouselProps) {
         <Typography
           variant="h5"
           className="mb-4 text-center font-bold text-gray-800"
-          placeholder={undefined}
-          onResize={undefined}
-          onResizeCapture={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
         >
           Carrusel de Fechas
         </Typography>

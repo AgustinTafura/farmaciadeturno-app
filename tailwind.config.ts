@@ -1,7 +1,6 @@
-import type { Config } from "tailwindcss";
 import withMT from "@material-tailwind/react/utils/withMT";
 
-const config: Config = withMT({
+const config = withMT({
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +10,6 @@ const config: Config = withMT({
   theme: {
     extend: {
       colors: {
-        //  bg-brand-white, text-brand-green, etc.
         "brand-white": "#DDDDDD",
         "brand-grey": "#C1BDBD",
         "brand-green": "#496B60",

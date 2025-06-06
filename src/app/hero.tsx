@@ -38,38 +38,18 @@ function Hero({ event }: HeroProps) {
       </picture>
       <div className="container mx-auto mt-[600px] md:mt-[17rem]">
         <div className="grid grid-cols-12 text-center lg:text-left">
-          <Card
-            className="col-span-full rounded-xl border border-white bg-white/90 p-8 py-10 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-6"
-            placeholder={undefined}
-            onResize={undefined}
-            onResizeCapture={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
-          >
+          <Card className="col-span-full rounded-xl border border-white bg-white/90 p-8 py-10 shadow-lg shadow-black/10 backdrop-blur-sm backdrop-saturate-200 xl:col-span-6">
             {address && address.trim() !== "" ? (
               <>
                 <Typography
                   variant="h1"
                   color="blue-gray"
                   className="text-3xl !leading-snug lg:max-w-3xl lg:text-5xl"
-                  placeholder={undefined}
-                  onResize={undefined}
-                  onResizeCapture={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
                 >
                   Farmacia{" "}
                   <span className="whitespace-nowrap uppercase">{title}</span>
                 </Typography>
-                <Typography
-                  variant="lead"
-                  className="mb-1 mt-6 !text-gray-900"
-                  placeholder={undefined}
-                  onResize={undefined}
-                  onResizeCapture={undefined}
-                  onPointerEnterCapture={undefined}
-                  onPointerLeaveCapture={undefined}
-                >
+                <Typography variant="lead" className="mb-1 mt-6 !text-gray-900">
                   <i className="fa fa-map-marker pr-2" aria-hidden="true" />
                   {`${address.split(",")[0]}, `}
                   <br className="block sm:hidden" />
@@ -89,15 +69,7 @@ function Hero({ event }: HeroProps) {
                     rel="noopener noreferrer"
                     className="w-full md:w-auto"
                   >
-                    <Button
-                      color="gray"
-                      className="w-full md:w-auto"
-                      placeholder={undefined}
-                      onResize={undefined}
-                      onResizeCapture={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
-                    >
+                    <Button color="gray" className="w-full md:w-auto">
                       Como llegar
                     </Button>
                   </a>
@@ -111,11 +83,6 @@ function Hero({ event }: HeroProps) {
                       color="gray"
                       variant="outlined"
                       className="w-full md:w-auto"
-                      placeholder={undefined}
-                      onResize={undefined}
-                      onResizeCapture={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
                     >
                       <i className="fa-brands fa-whatsapp fa-1x mr-2" />{" "}
                       whatsapp
@@ -131,11 +98,6 @@ function Hero({ event }: HeroProps) {
                       color="gray"
                       variant="outlined"
                       className="w-full md:w-auto"
-                      placeholder={undefined}
-                      onResize={undefined}
-                      onResizeCapture={undefined}
-                      onPointerEnterCapture={undefined}
-                      onPointerLeaveCapture={undefined}
                     >
                       <i className="fa-solid fa-phone fa-1x mr-2"></i> llamar
                     </Button>
