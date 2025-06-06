@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Button,
-  Typography,
-  Card,
-  CardBody,
-} from "@material-tailwind/react";
+import { Button, Typography, Card, CardBody } from "@material-tailwind/react";
 
 import {
   GlobeEuropeAfricaIcon,
@@ -14,9 +9,7 @@ import {
   PuzzlePieceIcon,
   HeartIcon,
 } from "@heroicons/react/24/solid";
-
 import CategoryCard from "@/components/category-card";
-
 
 const CATEGORIES = [
   {
@@ -49,10 +42,27 @@ export function CoursesCategories() {
   return (
     <section className="container mx-auto px-8 py-36">
       <div className="mb-20 grid place-items-center text-center">
-        <Typography variant="h2" color="blue-gray" className="my-3">
+        <Typography
+          variant="h2"
+          color="blue-gray"
+          className="my-3"
+          placeholder={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
           Courses Categories
         </Typography>
-        <Typography variant="lead" className="!text-gray-500 lg:w-6/12">
+        <Typography
+          variant="lead"
+          className="!text-gray-500 lg:w-6/12"
+          placeholder={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
+        >
           A comprehensive selection of courses designed to empower you with the
           skills you need to thrive in the dynamic world of web development.
         </Typography>
@@ -61,22 +71,64 @@ export function CoursesCategories() {
         <Card
           color="gray"
           className="relative grid h-full w-full place-items-center overflow-hidden text-center"
+          placeholder={undefined}
+          onResize={undefined}
+          onResizeCapture={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
-          <CardBody className="relative w-full">
-            <Typography color="white" className="text-xs font-bold opacity-50">
+          <CardBody
+            className="relative w-full"
+            placeholder={undefined}
+            onResize={undefined}
+            onResizeCapture={undefined}
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          >
+            <Typography
+              color="white"
+              className="text-xs font-bold opacity-50"
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
               HTML, CSS & Javascript
             </Typography>
-            <Typography variant="h4" className="mt-9" color="white">
+            <Typography
+              variant="h4"
+              className="mt-9"
+              color="white"
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
               Web Development Intro
             </Typography>
             <Typography
               color="white"
-              className="mt-4 mb-14 font-normal opacity-50"
+              className="mb-14 mt-4 font-normal opacity-50"
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             >
               Ready to start your web development journey?
             </Typography>
-            <Button size="sm" color="white">
+            <Button
+              size="sm"
+              color="white"
+              placeholder={undefined}
+              onResize={undefined}
+              onResizeCapture={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            >
               Enroll Now
             </Button>
           </CardBody>
