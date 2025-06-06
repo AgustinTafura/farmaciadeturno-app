@@ -15,8 +15,8 @@ const COMPANIES = [
 
 function TrustedCompany() {
   return (
-    <section className="py-8 px-8 lg:py-20">
-      <div className="container mx-auto grid items-center place-items-center">
+    <section className="px-8 py-8 lg:py-20">
+      <div className="container mx-auto grid place-items-center items-center">
         <div className="text-center">
           <Typography variant="h6" className="mb-4 uppercase !text-gray-500">
             AWESOME COMMUNITY
@@ -33,7 +33,7 @@ function TrustedCompany() {
               key={key}
               src={`/logos/logo-${logo}.svg`}
               alt={logo}
-              className="w-40 grayscale opacity-75"
+              className="w-40 opacity-75 grayscale"
             />
           ))}
         </div>

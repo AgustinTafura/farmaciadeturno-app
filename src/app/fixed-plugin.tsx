@@ -8,12 +8,12 @@ export function FixedPlugin() {
       <Button
         color="white"
         size="sm"
-        className="!fixed bottom-4 right-4 flex gap-1 pl-2 items-center border border-blue-gray-50"
+        className="!fixed bottom-4 right-4 flex items-center gap-1 border border-blue-gray-50 pl-2"
       >
         <Image
           width={128}
           height={128}
-          className="w-5 h-5"
+          className="h-5 w-5"
           alt="Material Tailwind"
           src="/"
         />{" "}

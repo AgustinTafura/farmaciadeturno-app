@@ -18,7 +18,7 @@ interface EventCardProps {
 export function EventCard({ img, title, desc, buttonLabel }: EventCardProps) {
   return (
     <Card color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+      <CardHeader floated={false} className="mx-0 mb-6 mt-0 h-48">
         <Image
           width={768}
           height={768}

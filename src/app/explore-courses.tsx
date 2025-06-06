@@ -57,7 +57,7 @@ export function ExploreCourses() {
         </Typography>
         <Typography
           variant="lead"
-          className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
+          className="mx-auto mt-2 w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
         >
           Browse through 1,000+ web development courses and find the one that
           fits your needs.

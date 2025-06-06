@@ -1,6 +1,11 @@
-import { Typography, Card, CardBody, CardHeader, Button } from "@material-tailwind/react";
+import {
+  Typography,
+  Card,
+  CardBody,
+  CardHeader,
+  Button,
+} from "@material-tailwind/react";
 import Image from "next/image";
-
 
 interface CourseCardProps {
   img: string;
@@ -19,7 +24,7 @@ export function CourseCard({ img, tag, title, desc, label }: CourseCardProps) {
           height={768}
           src={img}
           alt={title}
-          className="h-full w-full object-cover scale-[1.1]"
+          className="h-full w-full scale-[1.1] object-cover"
         />
       </CardHeader>
       <CardBody>

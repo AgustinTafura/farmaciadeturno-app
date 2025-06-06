@@ -4,9 +4,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   argentina: {
     name: "Argentina",
     address: "Hipólito Yrigoyen 444, Las Flores.",
-    addressCode: 'XWM2+C4 Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.156580015754!2d-59.09991492081652!3d-36.01646960021261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad00f782b1d%3A0x58aba5eb16affcc7!2sFarmacia%20Argentina!5e0!3m2!1ses!2sar!4v1748115550326!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/yDqTgv7wFsyVQvwE7',
+    addressCode: "XWM2+C4 Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3227.156580015754!2d-59.09991492081652!3d-36.01646960021261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad00f782b1d%3A0x58aba5eb16affcc7!2sFarmacia%20Argentina!5e0!3m2!1ses!2sar!4v1748115550326!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/yDqTgv7wFsyVQvwE7",
     instagram: "fargentina.lf",
     tel: "2244-442246",
     whatsapp: "2244-420222",
@@ -16,9 +17,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   "san martin": {
     name: "San Martin",
     address: "Av San Martin 567, Las Flores.",
-    addressCode: 'XWM2+R4 Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.396636125417!2d-59.10500325649906!3d-36.0154502662551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad424ee505d%3A0x8d03911390889a96!2sFarmacia%20San%20Martin!5e0!3m2!1ses!2sar!4v1748115698417!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/JHYKWZP6fYzEB2kw6',
+    addressCode: "XWM2+R4 Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.396636125417!2d-59.10500325649906!3d-36.0154502662551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad424ee505d%3A0x8d03911390889a96!2sFarmacia%20San%20Martin!5e0!3m2!1ses!2sar!4v1748115698417!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/JHYKWZP6fYzEB2kw6",
     instagram: "farmacia_sanmartin",
     tel: "2244-452223",
     whatsapp: "",
@@ -28,9 +30,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   nieto: {
     name: "Nieto",
     address: "Av. Pte. Perón 697 esq. Pueyrredón, Las Flores.",
-    addressCode: 'XWP4+MM Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.300887267332!2d-59.098718456302635!3d-36.01661946191688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cb00306ce6bb%3A0x5438e4c75aebbcc9!2sFarmacia%20Nieto!5e0!3m2!1ses!2sar!4v1748115665705!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/agM1FUPr9QqbiKTE7',
+    addressCode: "XWP4+MM Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.300887267332!2d-59.098718456302635!3d-36.01661946191688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cb00306ce6bb%3A0x5438e4c75aebbcc9!2sFarmacia%20Nieto!5e0!3m2!1ses!2sar!4v1748115665705!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/agM1FUPr9QqbiKTE7",
     instagram: "farmacia.nieto.lf",
     tel: "2244-440994",
     whatsapp: "",
@@ -40,9 +43,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   mafren: {
     name: "Mafren",
     address: "Av. San Martin 289, Las Flores.",
-    addressCode: 'XVQW+63 Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cb2acdce533d%3A0xcc0d5db6cbebcbb5!2sFarmacia%20Mafren!5e0!3m2!1ses!2sar!4v1748115254957!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/YZLV8WyeMRUEwCGB7',
+    addressCode: "XVQW+63 Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cb2acdce533d%3A0xcc0d5db6cbebcbb5!2sFarmacia%20Mafren!5e0!3m2!1ses!2sar!4v1748115254957!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/YZLV8WyeMRUEwCGB7",
     instagram: "farmacia.mafren",
     tel: "2244-450783",
     whatsapp: "",
@@ -52,9 +56,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   giraldi: {
     name: "Giraldi",
     address: "Bernardo Irigoyen 203, Las Flores.",
-    addressCode: 'XWM6+J3 Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11122.074496062396!2d-59.11279119019324!3d-36.01153741858537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cadbb2e306a7%3A0xb0bb8076d14c4086!2sFarmacia%20Giraldi!5e0!3m2!1ses!2sar!4v1748115348324!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/tdQ3uHkDfjp5AFpb9',
+    addressCode: "XWM6+J3 Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11122.074496062396!2d-59.11279119019324!3d-36.01153741858537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cadbb2e306a7%3A0xb0bb8076d14c4086!2sFarmacia%20Giraldi!5e0!3m2!1ses!2sar!4v1748115348324!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/tdQ3uHkDfjp5AFpb9",
     instagram: "farmacia.giraldi",
     tel: "2244-440878",
     whatsapp: "",
@@ -64,9 +69,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   "di bernardi": {
     name: "Di Bernardi",
     address: "Avellaneda y Rivadavia, Las Flores.",
-    addressCode: 'XVJW+Q2 Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9596352b5af5cc87%3A0x6c320b8b78aee288!2sFarmacia%20DI%20BERNARDI!5e0!3m2!1ses!2sar!4v1748114419584!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/YiVtbCKMfF2tqaRa7',
+    addressCode: "XVJW+Q2 Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9596352b5af5cc87%3A0x6c320b8b78aee288!2sFarmacia%20DI%20BERNARDI!5e0!3m2!1ses!2sar!4v1748114419584!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/YiVtbCKMfF2tqaRa7",
     instagram: "farmaciadibernardi",
     tel: "2244-442848",
     whatsapp: "2244428894",
@@ -76,9 +82,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   manzotti: {
     name: "Manzotti",
     address: "Harosteguy 315, Las Flores.",
-    addressCode: 'XWP3+4C Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad70fd96407%3A0x5b06c23b17388d1b!2sFarmacia%20Manzotti!5e0!3m2!1ses!2sar!4v1748115318706!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/o5AkJzzWtosQnwP28',
+    addressCode: "XWP3+4C Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12909.380971576502!2d-59.11501341983642!3d-36.01186184357453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad70fd96407%3A0x5b06c23b17388d1b!2sFarmacia%20Manzotti!5e0!3m2!1ses!2sar!4v1748115318706!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/o5AkJzzWtosQnwP28",
     instagram: "farmamanzotti",
     tel: "2244-453944",
     whatsapp: "",
@@ -88,9 +95,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   soraluce: {
     name: "Soraluce",
     address: "Av. Avellaneda 777, Las Flores.",
-    addressCode: 'XVHX+6R Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.04360424391!2d-59.107264647949584!3d-36.01976099943269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad276e87dc5%3A0x3fd83ccf810bb094!2sFarmacia%20Soraluce!5e0!3m2!1ses!2sar!4v1748115606968!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/ahjU3ZLBm3DEfiP5A',
+    addressCode: "XVHX+6R Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.04360424391!2d-59.107264647949584!3d-36.01976099943269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad276e87dc5%3A0x3fd83ccf810bb094!2sFarmacia%20Soraluce!5e0!3m2!1ses!2sar!4v1748115606968!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/ahjU3ZLBm3DEfiP5A",
     instagram: "farmamanzotti",
     tel: "2244-450085",
     whatsapp: "",
@@ -100,9 +108,11 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   paculnis: {
     name: "Paculnis",
     address: "Av. San Martin 911, Las Flores.",
-    addressCode: 'Av.+San+Martin+911,+B7200+Las+Flores,+Provincia+de+Buenos+Aires/@-36.0199774,-59.0939298,17z',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5799.491117024763!2d-59.104997547801894!3d-36.01722210758225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad424ee505d%3A0x8d03911390889a96!2sFarmacia%20San%20Martin!5e0!3m2!1ses!2sar!4v1748115390615!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/CNg2KshVgbFB2AW98',
+    addressCode:
+      "Av.+San+Martin+911,+B7200+Las+Flores,+Provincia+de+Buenos+Aires/@-36.0199774,-59.0939298,17z",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5799.491117024763!2d-59.104997547801894!3d-36.01722210758225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad424ee505d%3A0x8d03911390889a96!2sFarmacia%20San%20Martin!5e0!3m2!1ses!2sar!4v1748115390615!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/CNg2KshVgbFB2AW98",
     instagram: "farmacia_paculnis",
     tel: "2244-450688",
     whatsapp: "2244401758",
@@ -112,9 +122,10 @@ export const pharmaciesByName: Record<string, Pharmacy> = {
   pasteur: {
     name: "Pasteur",
     address: "Pueyrredón 515, Las Flores.",
-    addressCode: 'XVJX+9X Las Flores, Provincia de Buenos Aires',
-    googleMapSrc:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.097617283348!2d-59.106299052704216!3d-36.01910149639835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad3b64cda77%3A0x96c6e5b58afcbdf3!2sFarmacia%20Pasteur!5e0!3m2!1ses!2sar!4v1748115581736!5m2!1ses!2sar',
-    googlePlaceLink: 'https://maps.app.goo.gl/rNhUW3riG9ZXAqgQ7',
+    addressCode: "XVJX+9X Las Flores, Provincia de Buenos Aires",
+    googleMapSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6454.097617283348!2d-59.106299052704216!3d-36.01910149639835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597cad3b64cda77%3A0x96c6e5b58afcbdf3!2sFarmacia%20Pasteur!5e0!3m2!1ses!2sar!4v1748115581736!5m2!1ses!2sar",
+    googlePlaceLink: "https://maps.app.goo.gl/rNhUW3riG9ZXAqgQ7",
     instagram: "",
     tel: "2244-452250",
     whatsapp: "",

@@ -12,12 +12,12 @@ const config: Config = withMT({
     extend: {
       colors: {
         //  bg-brand-white, text-brand-green, etc.
-        'brand-white': "#DDDDDD",   
-        'brand-grey': "#C1BDBD",    
-        'brand-green': "#496B60",   
-        'brand-dark': "#333533",    
-        'brand-black': "#202020",   
-        brand: "#496B60", 
+        "brand-white": "#DDDDDD",
+        "brand-grey": "#C1BDBD",
+        "brand-green": "#496B60",
+        "brand-dark": "#333533",
+        "brand-black": "#202020",
+        brand: "#496B60",
       },
       fontFamily: {
         museo: ["Museo", "sans-serif"],

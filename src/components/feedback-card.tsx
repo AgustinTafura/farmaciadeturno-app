@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Typography, Card, CardBody, Avatar, Rating } from "@material-tailwind/react";
+import {
+  Typography,
+  Card,
+  CardBody,
+  Avatar,
+  Rating,
+} from "@material-tailwind/react";
 
 interface FeedbackCardProps {
   img: string;
@@ -9,7 +15,12 @@ interface FeedbackCardProps {
   title: string;
 }
 
-export function FeedbackCard({ img, feedback, client, title }: FeedbackCardProps) {
+export function FeedbackCard({
+  img,
+  feedback,
+  client,
+  title,
+}: FeedbackCardProps) {
   return (
     <Card shadow={false} className="items-start text-left">
       <CardBody>
@@ -20,7 +31,7 @@ export function FeedbackCard({ img, feedback, client, title }: FeedbackCardProps
         <Typography
           variant="small"
           color="blue-gray"
-          className="mt-1 mb-5 block font-normal"
+          className="mb-5 mt-1 block font-normal"
         >
           {title}
         </Typography>

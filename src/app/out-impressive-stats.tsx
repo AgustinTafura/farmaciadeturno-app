@@ -11,7 +11,6 @@ import {
 
 import StatsCard from "@/components/stats-card";
 
-
 const STATS = [
   {
     icon: DocumentTextIcon,
@@ -51,7 +50,7 @@ export function OutImpressiveStats() {
             your success.
           </Typography>
         </div>
-        <div className="grid gap-y-16 gap-x-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-x-10 gap-y-16 md:grid-cols-2 lg:grid-cols-4">
           {STATS.map((props, key) => (
             <StatsCard key={key} {...props} />
           ))}
