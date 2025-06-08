@@ -71,7 +71,7 @@ function Hero({ event }: HeroProps) {
                   >
                     <Button
                       color="gray"
-                      className="w-full bg-brand-dark md:w-auto"
+                      className="min-h-[48px] w-full bg-brand-dark md:w-auto"
                     >
                       Como llegar
                     </Button>
@@ -85,7 +85,7 @@ function Hero({ event }: HeroProps) {
                     <Button
                       color="gray"
                       variant="outlined"
-                      className="w-full border border-brand-dark text-brand-dark md:w-auto"
+                      className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
                     >
                       <i className="fa-brands fa-whatsapp fa-1x mr-2" />{" "}
                       whatsapp
@@ -100,7 +100,7 @@ function Hero({ event }: HeroProps) {
                     <Button
                       color="gray"
                       variant="outlined"
-                      className="w-full border border-brand-dark text-brand-dark md:w-auto"
+                      className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
                     >
                       <i className="fa-solid fa-phone fa-1x mr-2"></i> llamar
                     </Button>
