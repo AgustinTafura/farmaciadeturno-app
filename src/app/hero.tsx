@@ -107,7 +107,7 @@ function Hero({ event }: HeroProps) {
                   </a>
                 </div>
 
-                <div className="grid grid-cols-2 items-center justify-items-center gap-4 lg:grid-cols-3 lg:justify-start">
+                <div className="grid grid-cols-3 items-center justify-items-center gap-4 lg:justify-start">
                   {pharmacyImgLists[pharmacyList].map((element, index) => (
                     <Image
                       key={index}
