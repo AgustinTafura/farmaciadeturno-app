@@ -25,14 +25,15 @@ export default function Home() {
 
   const getDate = (offset: number) => {
     const now = new Date();
-
     // Hora de referencia en Argentina
     const buenosAiresTime = new Date(
       now.toLocaleString("en-US", {
         timeZone: "America/Argentina/Buenos_Aires",
       }),
     );
-
+    console.log("now", now);
+    console.log("buenosAiresTime", buenosAiresTime);
+    console.log("buenosAiresTime.getHours()", buenosAiresTime.getHours());
     // Si son antes de las 8:30 AM, restamos 1 día para el current
     if (
       offset === 0 &&
