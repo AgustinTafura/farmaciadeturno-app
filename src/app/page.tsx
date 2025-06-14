@@ -31,24 +31,27 @@ export default function Home() {
         timeZone: "America/Argentina/Buenos_Aires",
       }),
     );
-    console.log("now", now);
-    console.log("buenosAiresTime", buenosAiresTime);
-    console.log("buenosAiresTime.getHours()", buenosAiresTime.getHours());
     // Si son antes de las 8:30 AM, restamos 1 día para el current
     if (
       offset === 0 &&
       (buenosAiresTime.getHours() < 8 ||
         (buenosAiresTime.getHours() === 8 && buenosAiresTime.getMinutes() < 30))
     ) {
+      console.log("Ajustando fecha a ayer");
       buenosAiresTime.setDate(buenosAiresTime.getDate() - 1);
     } else {
+      console.log("hoy");
       buenosAiresTime.setDate(buenosAiresTime.getDate() + offset);
     }
-
-    return buenosAiresTime.toISOString().split("T")[0];
+    const yyyy = buenosAiresTime.getFullYear();
+    const mm = String(buenosAiresTime.getMonth() + 1).padStart(2, "0");
+    const dd = String(buenosAiresTime.getDate()).padStart(2, "0");
+    const localDate = `${yyyy}-${mm}-${dd}`;
+    return localDate;
   };
 
   const findEventByDate = (date: string): Event | undefined => {
+    console.log("Buscando evento para la fecha:", date);
     const event = events.find((e) => e.start.date === date);
     if (!event) return undefined;
     const pharmacy = pharmaciesByName[event.summary.toLowerCase()];
