@@ -3,20 +3,22 @@
 //data
 import { pharmaciesByName } from "@/data/pharmacies";
 import { Event } from "@/types/event";
+import dynamic from "next/dynamic";
 
 // components
 import { Navbar, Footer } from "@/components";
 
 // sections
-import Hero from "./hero";
+const Hero = dynamic(() => import("./hero"), { ssr: false }); // 👈 Lazy load
 
 import { useEffect, useState } from "react";
+
 
 export default function Home() {
   const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
-    fetch("/api/events")
+    fetch("/api/calendario")
       .then((res) => res.json())
       .then((data) => {
         if (data.items) setEvents(data.items);
@@ -40,7 +42,6 @@ export default function Home() {
       console.log("Ajustando fecha a ayer");
       buenosAiresTime.setDate(buenosAiresTime.getDate() - 1);
     } else {
-      console.log("hoy");
       buenosAiresTime.setDate(buenosAiresTime.getDate() + offset);
     }
     const yyyy = buenosAiresTime.getFullYear();

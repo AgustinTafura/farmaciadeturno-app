@@ -22,8 +22,13 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Farmacias de Turno",
-  description: "Farmacias de Turno en Las Flores",
+  title: "Farmacias de Turno en Las Flores",
+  description: "Calendario actualizado de farmacias de turno en Las Flores",
+  openGraph: {
+  title: "Farmacias de Turno en Las Flores",
+  description: "Calendario actualizado de farmacias de turno en Las Flores",
+    url: "https://www.farmaciadeturnoenlasflores.com.ar",
+  },
 };
 
 export default function RootLayout({

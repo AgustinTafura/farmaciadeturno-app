@@ -76,35 +76,38 @@ function Hero({ event }: HeroProps) {
                       Como llegar
                     </Button>
                   </a>
-                  <a
-                    href={whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full md:w-auto"
-                  >
-                    <Button
-                      color="gray"
-                      variant="outlined"
-                      className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
+                  {event.pharmacy.whatsapp && (
+                    <a
+                      href={whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full md:w-auto"
                     >
-                      <i className="fa-brands fa-whatsapp fa-1x mr-2" />{" "}
-                      whatsapp
-                    </Button>
-                  </a>
-                  <a
-                    href={tel}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full md:w-auto"
-                  >
-                    <Button
-                      color="gray"
-                      variant="outlined"
-                      className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
+                      <Button
+                        color="gray"
+                        variant="outlined"
+                        className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
+                      >
+                        <i className="fa-brands fa-whatsapp fa-1x mr-2" />{" "}
+                        whatsapp
+                      </Button>
+                    </a>                ) }
+                  { event.pharmacy.tel && (
+                    <a
+                      href={tel}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full md:w-auto"
                     >
-                      <i className="fa-solid fa-phone fa-1x mr-2"></i> llamar
-                    </Button>
-                  </a>
+                      <Button
+                        color="gray"
+                        variant="outlined"
+                        className="min-h-[48px] w-full border border-brand-dark text-brand-dark md:w-auto"
+                      >
+                        <i className="fa-solid fa-phone fa-1x mr-2"></i> llamar
+                      </Button>
+                    </a>
+                  )}
                 </div>
 
                 <div className="grid grid-cols-3 items-center justify-items-center gap-4 lg:justify-start">
