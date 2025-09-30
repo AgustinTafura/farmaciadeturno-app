@@ -21,13 +21,33 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Farmacias de Turno en Las Flores",
-  description: "Calendario actualizado de farmacias de turno en Las Flores",
+export const metadata = {
+  title: "Farmacia de Turno en Las Flores | Farmacias abiertas hoy",
+  description:
+    "Consultá qué farmacia está de turno hoy en Las Flores, Buenos Aires. Información actualizada todos los días, horarios, direcciones y contactos.",
+  keywords: [
+    "farmacia de turno",
+    "farmacias Las Flores",
+    "farmacia abierta hoy",
+    "farmacia de guardia Las Flores",
+  ],
+  authors: [{ name: "Farmacia de Turno Las Flores" }],
   openGraph: {
-  title: "Farmacias de Turno en Las Flores",
-  description: "Calendario actualizado de farmacias de turno en Las Flores",
+    title: "Farmacia de Turno en Las Flores",
+    description:
+      "Información diaria de farmacias de turno en Las Flores, Buenos Aires.",
     url: "https://www.farmaciadeturnoenlasflores.com.ar",
+    siteName: "Farmacia de Turno Las Flores",
+    images: [
+      {
+        url: "https://www.farmaciadeturnoenlasflores.com.ar/image/patron_verde.webp",
+        width: 1200,
+        height: 630,
+        alt: "Farmacias de Turno en Las Flores",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
   },
 };
 

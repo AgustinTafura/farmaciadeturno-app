@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.farmaciadeturnoenlasflores.com.ar/sitemap.xml

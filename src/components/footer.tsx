@@ -21,7 +21,7 @@ export function Footer() {
   return (
     <footer className="px-8 pb-8 pt-24">
       <div className="container mx-auto flex max-w-6xl flex-col">
-        <div className="grid !w-full grid-cols-1 lg:grid-cols-3">
+        <div className="grid !w-full grid-cols-1">
           {/* <div className="flex col-span-2 items-center gap-10 mb-10 lg:mb-0 md:gap-36">
             {LINKS.map(({ title, items }) => (
               <ul key={title}>
@@ -42,17 +42,16 @@ export function Footer() {
               </ul>
             ))}
           </div> */}
-          <div className="">
-            {/* <Typography variant="h6" className="mb-3 text-left">
-              Subscribe
+          <section className="">
+            <Typography variant="h3 small"  className="font-small mb-2 text-center lg:text-left ">
+              <strong>Farmacias de Turno en Las Flores, Buenos Aires</strong>
             </Typography>
-            <Typography className="!text-gray-500 font-normal mb-4 text-base">
-              Get access to subscriber exclusive deals and be the first who gets
-              informed about fresh sales.
+            <Typography className="!text-gray-500 font-small mb-4 text-base text-center lg:text-left">
+              En <strong>farmaciadeturnoenlasflores.com.ar</strong> podés consultar qué 
+              farmacia está de turno hoy, mañana o durante el fin de semana en 
+              <strong>Las Flores, Provincia de Buenos Aires</strong>. Información actualizada 
+              diariamente con direcciones, teléfonos y cómo llegar.
             </Typography>
-            <Typography variant="small" className="font-medium mb-2 text-left">
-              Your Email
-            </Typography> */}
             {/* <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
               <div className="w-full">
                 <Input label="Email" color="gray" />
@@ -70,7 +69,7 @@ export function Footer() {
                 button
               </Button>
             </div> */}
-          </div>
+          </section>
         </div>
         <Typography
           color="blue-gray"

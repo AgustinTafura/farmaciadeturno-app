@@ -72,7 +72,7 @@ export function Navbar() {
           className="relative z-50 mt-6 border-0 py-3 pl-6 pr-3"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
+            <Typography variant="h1" color="blue-gray" className="text-lg font-bold">
               Farmacia de Turno en Las Flores
             </Typography>
             {/* <ul className="ml-10 hidden items-center gap-8 lg:flex">

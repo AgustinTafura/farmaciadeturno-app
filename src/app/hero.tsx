@@ -42,7 +42,7 @@ function Hero({ event }: HeroProps) {
             {address && address.trim() !== "" ? (
               <>
                 <Typography
-                  variant="h1"
+                  variant="h2"
                   color="blue-gray"
                   className="text-3xl !leading-snug lg:max-w-3xl lg:text-5xl"
                 >
