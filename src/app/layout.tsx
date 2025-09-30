@@ -21,7 +21,7 @@ const roboto = Roboto({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Farmacia de Turno en Las Flores | Farmacias abiertas hoy",
   description:
     "Consultá qué farmacia está de turno hoy en Las Flores, Buenos Aires. Información actualizada todos los días, horarios, direcciones y contactos.",

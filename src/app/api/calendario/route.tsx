@@ -45,6 +45,7 @@ async function sendErrorEmail(error: string) {
   try {
     await transporter.sendMail(mailOptions);
     logMessage("📧 Email de error enviado correctamente.");
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (mailErr: any) {
     logMessage(`❌ Error al enviar email: ${mailErr.message}`);
   }
@@ -53,6 +54,7 @@ async function sendErrorEmail(error: string) {
 export async function GET() {
   try {
     const now = new Date();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let cachedData: any;
 
     // Si el archivo existe, verificar si fue actualizado hoy
@@ -104,6 +106,7 @@ export async function GET() {
     logMessage("✅ Nuevo calendario guardado correctamente.");
 
     return NextResponse.json(data);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (err: any) {
     const errorMsg = `❌ Error general: ${err.message}`;
     logMessage(errorMsg);
