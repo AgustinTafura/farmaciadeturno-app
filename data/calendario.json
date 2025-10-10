@@ -1,89 +1,25 @@
 {
-  "lastUpdated": "2025-09-28T03:16:02.441Z",
+  "lastUpdated": "2025-10-10T16:28:28.357Z",
   "data": {
     "kind": "calendar#events",
-    "etag": "\"p337oric6vfn8u0o\"",
+    "etag": "\"p33vrre6qie4900o\"",
     "summary": "Farmacias de Turno - Las Flores",
     "description": "",
-    "updated": "2025-09-23T13:12:40.492Z",
+    "updated": "2025-10-03T13:39:32.291Z",
     "timeZone": "America/Argentina/Buenos_Aires",
     "accessRole": "reader",
     "defaultReminders": [],
     "items": [
       {
         "kind": "calendar#event",
-        "etag": "\"3473909450816000\"",
-        "id": "16rrqb9ak48a7krb9l0ujdq56k_20250927",
+        "etag": "\"3518997494215582\"",
+        "id": "5mchkn9mvnrd70ljjg6btclbt8_20251009",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=MTZycnFiOWFrNDhhN2tyYjlsMHVqZHE1NmtfMjAyNTA5MjcgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
-        "created": "2025-01-15T14:26:05.000Z",
-        "updated": "2025-01-15T15:25:25.408Z",
-        "summary": "San Martin",
-        "location": "Farmacia San Martin, 5es. axaaàv, Av. San Martin xxX67, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
-        "creator": {
-          "email": "farmaciaargentina.lf@gmail.com"
-        },
-        "organizer": {
-          "email": "cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f@group.calendar.google.com",
-          "displayName": "Farmacias de Turno - Las Flores",
-          "self": true
-        },
-        "start": {
-          "date": "2025-09-27"
-        },
-        "end": {
-          "date": "2025-09-28"
-        },
-        "recurringEventId": "16rrqb9ak48a7krb9l0ujdq56k",
-        "originalStartTime": {
-          "date": "2025-09-27"
-        },
-        "iCalUID": "16rrqb9ak48a7krb9l0ujdq56k@google.com",
-        "sequence": 3,
-        "eventType": "default"
-      },
-      {
-        "kind": "calendar#event",
-        "etag": "\"3473909226702000\"",
-        "id": "3enbpdgbmev7ot0ug4ammhk9op_20250928",
-        "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=M2VuYnBkZ2JtZXY3b3QwdWc0YW1taGs5b3BfMjAyNTA5MjggY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
-        "created": "2025-01-15T14:05:13.000Z",
-        "updated": "2025-01-15T15:23:33.351Z",
-        "summary": "Nieto",
-        "location": "Avenida Presidente Perón & Calle pueyrredon, Av. Pres. Perón & C. pueyrredon, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
-        "creator": {
-          "email": "farmaciaargentina.lf@gmail.com"
-        },
-        "organizer": {
-          "email": "cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f@group.calendar.google.com",
-          "displayName": "Farmacias de Turno - Las Flores",
-          "self": true
-        },
-        "start": {
-          "date": "2025-09-28"
-        },
-        "end": {
-          "date": "2025-09-29"
-        },
-        "recurringEventId": "3enbpdgbmev7ot0ug4ammhk9op",
-        "originalStartTime": {
-          "date": "2025-09-28"
-        },
-        "iCalUID": "3enbpdgbmev7ot0ug4ammhk9op@google.com",
-        "sequence": 2,
-        "eventType": "default"
-      },
-      {
-        "kind": "calendar#event",
-        "etag": "\"3517102202940254\"",
-        "id": "5mchkn9mvnrd70ljjg6btclbt8_20250929",
-        "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=NW1jaGtuOW12bnJkNzBsampnNmJ0Y2xidDhfMjAyNTA5MjkgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NW1jaGtuOW12bnJkNzBsampnNmJ0Y2xidDhfMjAyNTEwMDkgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:08:24.000Z",
-        "updated": "2025-09-22T14:25:01.470Z",
-        "summary": "Mafren",
-        "location": "Farmacia Mafren, Av. San Martin 289, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
+        "updated": "2025-10-03T13:39:07.107Z",
+        "summary": "Argentina",
+        "location": "Farmacia Argentina, Hipólito Yrigoyen 444, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
         "creator": {
           "email": "farmaciaargentina.lf@gmail.com"
         },
@@ -93,14 +29,14 @@
           "self": true
         },
         "start": {
-          "date": "2025-09-29"
+          "date": "2025-10-09"
         },
         "end": {
-          "date": "2025-09-30"
+          "date": "2025-10-10"
         },
         "recurringEventId": "5mchkn9mvnrd70ljjg6btclbt8",
         "originalStartTime": {
-          "date": "2025-09-29"
+          "date": "2025-10-09"
         },
         "iCalUID": "5mchkn9mvnrd70ljjg6btclbt8@google.com",
         "sequence": 2,
@@ -109,9 +45,9 @@
       {
         "kind": "calendar#event",
         "etag": "\"3517266255887774\"",
-        "id": "7t1j9t92i9sl1qrfj1isevf1ca_20250930",
+        "id": "7t1j9t92i9sl1qrfj1isevf1ca_20251010",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=N3Qxajl0OTJpOXNsMXFyZmoxaXNldmYxY2FfMjAyNTA5MzAgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=N3Qxajl0OTJpOXNsMXFyZmoxaXNldmYxY2FfMjAyNTEwMTAgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:09:56.000Z",
         "updated": "2025-09-23T13:12:07.943Z",
         "summary": "Giraldi",
@@ -125,14 +61,14 @@
           "self": true
         },
         "start": {
-          "date": "2025-09-30"
+          "date": "2025-10-10"
         },
         "end": {
-          "date": "2025-10-01"
+          "date": "2025-10-11"
         },
         "recurringEventId": "7t1j9t92i9sl1qrfj1isevf1ca",
         "originalStartTime": {
-          "date": "2025-09-30"
+          "date": "2025-10-10"
         },
         "iCalUID": "7t1j9t92i9sl1qrfj1isevf1ca@google.com",
         "sequence": 2,
@@ -141,9 +77,9 @@
       {
         "kind": "calendar#event",
         "etag": "\"3516405662739678\"",
-        "id": "11q3f79652kjqgg79l6mr7dos3_20251001",
+        "id": "11q3f79652kjqgg79l6mr7dos3_20251011",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=MTFxM2Y3OTY1MmtqcWdnNzlsNm1yN2RvczNfMjAyNTEwMDEgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=MTFxM2Y3OTY1MmtqcWdnNzlsNm1yN2RvczNfMjAyNTEwMTEgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:16:16.000Z",
         "updated": "2025-09-18T13:40:31.369Z",
         "summary": "Di Bernardi",
@@ -157,14 +93,14 @@
           "self": true
         },
         "start": {
-          "date": "2025-10-01"
+          "date": "2025-10-11"
         },
         "end": {
-          "date": "2025-10-02"
+          "date": "2025-10-12"
         },
         "recurringEventId": "11q3f79652kjqgg79l6mr7dos3",
         "originalStartTime": {
-          "date": "2025-10-01"
+          "date": "2025-10-11"
         },
         "iCalUID": "11q3f79652kjqgg79l6mr7dos3@google.com",
         "sequence": 4,
@@ -173,9 +109,9 @@
       {
         "kind": "calendar#event",
         "etag": "\"3473909358376000\"",
-        "id": "3v2tmc1ldpci60g0l9k1883mrc_20251002",
+        "id": "3v2tmc1ldpci60g0l9k1883mrc_20251012",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=M3YydG1jMWxkcGNpNjBnMGw5azE4ODNtcmNfMjAyNTEwMDIgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=M3YydG1jMWxkcGNpNjBnMGw5azE4ODNtcmNfMjAyNTEwMTIgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:17:04.000Z",
         "updated": "2025-01-15T15:24:39.188Z",
         "summary": "Manzotti",
@@ -189,14 +125,14 @@
           "self": true
         },
         "start": {
-          "date": "2025-10-02"
+          "date": "2025-10-12"
         },
         "end": {
-          "date": "2025-10-03"
+          "date": "2025-10-13"
         },
         "recurringEventId": "3v2tmc1ldpci60g0l9k1883mrc",
         "originalStartTime": {
-          "date": "2025-10-02"
+          "date": "2025-10-12"
         },
         "iCalUID": "3v2tmc1ldpci60g0l9k1883mrc@google.com",
         "sequence": 3,
@@ -204,12 +140,12 @@
       },
       {
         "kind": "calendar#event",
-        "etag": "\"3517266320985502\"",
-        "id": "3fouhaakacvdujoac9urj26v0l_20251003",
+        "etag": "\"3518997544582654\"",
+        "id": "3fouhaakacvdujoac9urj26v0l_20251013",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=M2ZvdWhhYWthY3ZkdWpvYWM5dXJqMjZ2MGxfMjAyNTEwMDMgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=M2ZvdWhhYWthY3ZkdWpvYWM5dXJqMjZ2MGxfMjAyNTEwMTMgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:19:45.000Z",
-        "updated": "2025-09-23T13:12:40.492Z",
+        "updated": "2025-10-03T13:39:32.291Z",
         "summary": "Argentina",
         "location": "Farmacia Argentina, Hipólito Yrigoyen 444, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
         "creator": {
@@ -221,14 +157,14 @@
           "self": true
         },
         "start": {
-          "date": "2025-10-03"
+          "date": "2025-10-13"
         },
         "end": {
-          "date": "2025-10-04"
+          "date": "2025-10-14"
         },
         "recurringEventId": "3fouhaakacvdujoac9urj26v0l",
         "originalStartTime": {
-          "date": "2025-10-03"
+          "date": "2025-10-13"
         },
         "iCalUID": "3fouhaakacvdujoac9urj26v0l@google.com",
         "sequence": 3,
@@ -237,9 +173,9 @@
       {
         "kind": "calendar#event",
         "etag": "\"3516405615842686\"",
-        "id": "26qaehgbnd0u0pupqi4lt6i4pc_20251004",
+        "id": "26qaehgbnd0u0pupqi4lt6i4pc_20251014",
         "status": "confirmed",
-        "htmlLink": "https://www.google.com/calendar/event?eid=MjZxYWVoZ2JuZDB1MHB1cHFpNGx0Nmk0cGNfMjAyNTEwMDQgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "htmlLink": "https://www.google.com/calendar/event?eid=MjZxYWVoZ2JuZDB1MHB1cHFpNGx0Nmk0cGNfMjAyNTEwMTQgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
         "created": "2025-01-15T14:20:47.000Z",
         "updated": "2025-09-18T13:40:07.921Z",
         "summary": "Soraluce",
@@ -253,16 +189,79 @@
           "self": true
         },
         "start": {
-          "date": "2025-10-04"
+          "date": "2025-10-14"
         },
         "end": {
-          "date": "2025-10-05"
+          "date": "2025-10-15"
         },
         "recurringEventId": "26qaehgbnd0u0pupqi4lt6i4pc",
         "originalStartTime": {
-          "date": "2025-10-04"
+          "date": "2025-10-14"
         },
         "iCalUID": "26qaehgbnd0u0pupqi4lt6i4pc@google.com",
+        "sequence": 3,
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"3473909408282000\"",
+        "id": "5m4r6mbhmk6jlhofh567628iue_20251015",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NW00cjZtYmhtazZqbGhvZmg1Njc2MjhpdWVfMjAyNTEwMTUgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "created": "2025-01-15T14:21:43.000Z",
+        "updated": "2025-01-15T15:25:04.141Z",
+        "summary": "Paculnis",
+        "creator": {
+          "email": "farmaciaargentina.lf@gmail.com"
+        },
+        "organizer": {
+          "email": "cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f@group.calendar.google.com",
+          "displayName": "Farmacias de Turno - Las Flores",
+          "self": true
+        },
+        "start": {
+          "date": "2025-10-15"
+        },
+        "end": {
+          "date": "2025-10-16"
+        },
+        "recurringEventId": "5m4r6mbhmk6jlhofh567628iue",
+        "originalStartTime": {
+          "date": "2025-10-15"
+        },
+        "iCalUID": "5m4r6mbhmk6jlhofh567628iue@google.com",
+        "sequence": 3,
+        "eventType": "default"
+      },
+      {
+        "kind": "calendar#event",
+        "etag": "\"3501895079165534\"",
+        "id": "437rb29oli5uib8535hhcooagi_20251016",
+        "status": "confirmed",
+        "htmlLink": "https://www.google.com/calendar/event?eid=NDM3cmIyOW9saTV1aWI4NTM1aGhjb29hZ2lfMjAyNTEwMTYgY2YxMWVlNmM2Mzg4Yjg5YjQ2ODZlZTcyYTM2OTJmNWViMjA1MzExOGFhMWQxNDdmNTIzNzFiMjBiOTcwNDk2ZkBn",
+        "created": "2025-01-15T14:22:35.000Z",
+        "updated": "2025-06-26T14:18:59.582Z",
+        "summary": "Pasteur",
+        "location": "Farmacia Pasteur, C. pueyrredon 515, B7200 Las Flores, Provincia de Buenos Aires, Argentina",
+        "creator": {
+          "email": "farmaciaargentina.lf@gmail.com"
+        },
+        "organizer": {
+          "email": "cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f@group.calendar.google.com",
+          "displayName": "Farmacias de Turno - Las Flores",
+          "self": true
+        },
+        "start": {
+          "date": "2025-10-16"
+        },
+        "end": {
+          "date": "2025-10-17"
+        },
+        "recurringEventId": "437rb29oli5uib8535hhcooagi",
+        "originalStartTime": {
+          "date": "2025-10-16"
+        },
+        "iCalUID": "437rb29oli5uib8535hhcooagi@google.com",
         "sequence": 3,
         "eventType": "default"
       }
