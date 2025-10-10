@@ -7,20 +7,28 @@ const calendarId =
   "cf11ee6c6388b89b4686ee72a3692f5eb2053118aa1d147f52371b20b970496f@group.calendar.google.com";
 const apiKey = process.env.GOOGLE_CALENDAR_API_KEY;
 
-const DATA_PATH = path.join(process.cwd(), "data", "calendario.json");
-const LOG_PATH = path.join(process.cwd(), "data", "calendario-log.txt");
+// 📁 Cache temporal válido en Vercel
+const DATA_PATH = path.join("/tmp", "calendario.json");
 
-// Función auxiliar: escribir logs
-function logMessage(message: string) {
-  const timestamp = new Date().toISOString();
-  const line = `[${timestamp}] ${message}\n`;
-  fs.appendFileSync(LOG_PATH, line);
-  console.log(line);
+interface CachedCalendarData {
+  lastUpdated: string;
+  data: Record<string, unknown>;
 }
 
-// Función auxiliar: enviar email de error
-async function sendErrorEmail(error: string) {
-  if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS || !process.env.ERROR_EMAIL_TO) {
+// 🧾 Logs solo por consola
+function logMessage(message: string): void {
+  const timestamp = new Date().toISOString();
+  console.log(`[${timestamp}] ${message}`);
+}
+
+// ✉️ Enviar email si ocurre un error
+async function sendErrorEmail(error: string): Promise<void> {
+  if (
+    !process.env.SMTP_HOST ||
+    !process.env.SMTP_USER ||
+    !process.env.SMTP_PASS ||
+    !process.env.ERROR_EMAIL_TO
+  ) {
     console.warn("⚠️ No se enviará email: faltan variables SMTP en .env");
     return;
   }
@@ -45,22 +53,24 @@ async function sendErrorEmail(error: string) {
   try {
     await transporter.sendMail(mailOptions);
     logMessage("📧 Email de error enviado correctamente.");
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } catch (mailErr: any) {
-    logMessage(`❌ Error al enviar email: ${mailErr.message}`);
+  } catch (mailErr) {
+    if (mailErr instanceof Error) {
+      logMessage(`❌ Error al enviar email: ${mailErr.message}`);
+    } else {
+      logMessage("❌ Error desconocido al enviar email.");
+    }
   }
 }
 
 export async function GET() {
   try {
     const now = new Date();
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let cachedData: any;
+    let cachedData: CachedCalendarData | null = null;
 
-    // Si el archivo existe, verificar si fue actualizado hoy
+    // ✅ Si existe cache y es del mismo día → usarlo
     if (fs.existsSync(DATA_PATH)) {
       const file = fs.readFileSync(DATA_PATH, "utf-8");
-      cachedData = JSON.parse(file);
+      cachedData = JSON.parse(file) as CachedCalendarData;
       const lastUpdated = new Date(cachedData.lastUpdated);
 
       if (
@@ -73,7 +83,7 @@ export async function GET() {
       }
     }
 
-    // Cache vencido → consultar API
+    // 🔄 Cache vencido → consultar API
     logMessage("🔄 Consultando API de Google Calendar...");
 
     const start = new Date();
@@ -95,22 +105,25 @@ export async function GET() {
       return NextResponse.json({ error }, { status: 500 });
     }
 
-    const data = await res.json();
+    const data: Record<string, unknown> = await res.json();
 
-    const newCache = {
+    const newCache: CachedCalendarData = {
       lastUpdated: now.toISOString(),
       data,
     };
 
+    // 💾 Guardar cache en /tmp (válido en Vercel)
     fs.writeFileSync(DATA_PATH, JSON.stringify(newCache, null, 2));
     logMessage("✅ Nuevo calendario guardado correctamente.");
 
     return NextResponse.json(data);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } catch (err: any) {
-    const errorMsg = `❌ Error general: ${err.message}`;
+  } catch (err) {
+    const errorMsg =
+      err instanceof Error
+        ? `❌ Error general: ${err.message}`
+        : "❌ Error desconocido";
     logMessage(errorMsg);
     await sendErrorEmail(errorMsg);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json({ error: errorMsg }, { status: 500 });
   }
 }
