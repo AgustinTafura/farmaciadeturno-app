@@ -8,15 +8,6 @@ const calendarId =
 const apiKey = process.env.GOOGLE_CALENDAR_API_KEY;
 
 const DATA_PATH = path.join(process.cwd(), "data", "calendario.json");
-// const LOG_PATH = path.join(process.cwd(), "data", "calendario-log.txt");
-
-// // Función auxiliar: escribir logs
-// function logMessage(message: string) {
-//   const timestamp = new Date().toISOString();
-//   const line = `[${timestamp}] ${message}\n`;
-//   fs.appendFileSync(LOG_PATH, line);
-//   console.log(line);
-// }
 
 // Función auxiliar: enviar email de error
 async function sendErrorEmail(error: string) {
