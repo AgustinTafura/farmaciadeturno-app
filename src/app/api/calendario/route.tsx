@@ -116,7 +116,7 @@ export async function GET() {
     // 💾 Guardar cache en /tmp (válido en Vercel)
     fs.writeFileSync(DATA_PATH, JSON.stringify(newCache, null, 2));
     logMessage("✅ Nuevo calendario guardado correctamente.");
-
+    const cors = { "Access-Control-Allow-Origin": "*" };
     return NextResponse.json(data, { headers: cors });
   } catch (err) {
     const errorMsg =
