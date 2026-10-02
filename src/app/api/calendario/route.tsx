@@ -79,7 +79,8 @@ export async function GET() {
         lastUpdated.getDate() === now.getDate()
       ) {
         logMessage("✅ Cache actual encontrado. No se consulta la API externa.");
-        return NextResponse.json(cachedData.data);
+        const cors = { "Access-Control-Allow-Origin": "*" };
+        return NextResponse.json(cachedData.data, { headers: cors });
       }
     }
 
@@ -116,7 +117,7 @@ export async function GET() {
     fs.writeFileSync(DATA_PATH, JSON.stringify(newCache, null, 2));
     logMessage("✅ Nuevo calendario guardado correctamente.");
 
-    return NextResponse.json(data);
+    return NextResponse.json(data, { headers: cors });
   } catch (err) {
     const errorMsg =
       err instanceof Error
